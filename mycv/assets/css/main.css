@@ -2219,6 +2219,11 @@ input, select, textarea {
 				}
 
 		}
+	
+/* Skills */
+		.skills {
+
+		}
 
 /* Form */
 
@@ -3256,7 +3261,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #5e42a6;
 		}
 
 		.wrapper.style3-alt {
@@ -3491,7 +3496,7 @@ input, select, textarea {
 
 /* Footer */
 
-	#sidebar + #wrapper + #footer {
+	/* #sidebar + #wrapper + #footer {
 		margin-left: 18em;
 	}
 
@@ -3518,7 +3523,7 @@ input, select, textarea {
 
 	#header + #wrapper + #footer > .inner {
 		margin: 0 auto;
-	}
+	} */
 
 /* Sidebar */
 
@@ -3907,3 +3912,28 @@ input, select, textarea {
 			}
 
 		}
+
+
+		.container {
+			display: flex;              /* Sử dụng Flexbox */
+			height: 30vh;              /* Chiều cao 100% màn hình */
+		}
+		
+		.left, .right {
+			flex: 1;                    /* Mỗi phần chiếm 50% không gian */
+			display: flex;              /* Sử dụng flex để căn giữa nội dung */
+			flex-direction: column;     /* Đảm bảo các phần tử con xếp theo cột */
+			justify-content: flex-start; /* Căn chỉnh nội dung theo chiều dọc */
+			align-items: flex-start;    /* Căn chỉnh nội dung theo chiều ngang */
+			padding: 20px;              /* Thêm padding để không gian giữa nội dung và viền */
+		}
+		
+		/* Tùy chọn: Kích thước chữ có thể được chỉnh lại */
+		.left h4, .right h4 {
+			margin-bottom: 16px;        /* Tạo khoảng cách giữa tiêu đề và đoạn văn */
+		}
+		
+		.left p, .right p {
+			margin: 0;                  /* Xóa margin mặc định của đoạn văn */
+		}
+		
